@@ -1,0 +1,135 @@
+.reveal .progress {
+    background: rgba(0, 0, 0, 0.2);
+    color: #ff7f00 !important;
+}
+
+
+.reveal .controls button {
+    color: #ff7f00 !important;
+}
+.slide-left {
+    animation: slide-left 12s linear infinite ;
+}
+
+.slide-left-1 {
+    animation: slide-left 10s linear infinite ;
+}
+
+.slide-left-2 {
+    animation: slide-left 8s linear infinite ;
+}
+
+.slide-left-3 {
+    animation: slide-left 6s linear infinite ;
+}
+
+.slide-down-to-vojta {
+    animation: slide-down-to-vojta 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate forwards;
+}
+
+@keyframes slide-left {
+    0% {
+      transform: translateX(2000px);
+    }
+    100% {
+      transform: translateX(-3000px);
+    }
+  } 
+
+
+  @keyframes slide-down-to-vojta {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(100px);
+    }
+  } 
+
+.strom {
+    position: absolute;
+    width: 200px;
+    max-width: none !important;
+    max-height: none !important;
+}
+
+.object {
+    position: absolute;
+    max-width: none !important;
+    max-height: none !important;
+}
+
+.middle {
+    position: relative;
+    max-width: none !important;
+    max-height: none !important;
+}
+
+.description {
+    width: 100%;
+    position: relative;
+    bottom: -200px;
+    background-color: rgba(20,20,20, 0.5);
+    padding: 10px;
+    text-justify: auto;
+}
+
+#potok {
+    transform: rotate(90deg);
+    max-width: 400px !important;
+}
+
+.slide-in-tl {
+	animation: slide-in-tl 8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both infinite;
+}
+
+.slide-out-tl {
+	animation: slide-out-tl 8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both infinite;
+}
+
+
+ @keyframes slide-in-tl {
+    0% {
+      transform: translateY(-1000px) translateX(-1000px);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(0) translateX(0);
+      opacity: 1;
+    }
+    100% {
+        transform: translateY(0) translateX(0);
+        opacity: 1;
+      }
+  }
+
+  @keyframes slide-out-tl {
+    0% {
+        transform: translateY(0) translateX(0);
+        opacity: 1;
+      }
+    50% {
+      transform: translateY(0) translateX(0);
+      opacity: 1;
+    }
+
+      100% {
+        transform: translateY(-1000px) translateX(-1000px);
+        opacity: 0;
+      }
+  }
+  
+@media screen and (min-width: 801px) {
+    .description {
+      font-size: 15px;
+    }
+  }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 800px) {
+    .description {
+      font-size: 35px;
+    }
+  }
+
+
