@@ -1,25 +1,26 @@
 {
   "name": "reveal.js",
   "version": "4.1.0",
-  "description": "The HTML Presentation Framework",
-  "homepage": "https://revealjs.com",
-  "subdomain": "revealjs",
-  "main": "dist/reveal.js",
-  "module": "dist/reveal.esm.js",
+  "description": "O lisce",
+  "homepage": "https://ff0000.cz",
   "license": "MIT",
   "scripts": {
     "test": "gulp test",
     "start": "gulp serve",
-    "build": "gulp"
+    "build": "gulp",
+    "release": "standard-version",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch",
+    "release:major": "standard-version --release-as major"
   },
   "author": {
-    "name": "Hakim El Hattab",
-    "email": "hakim.elhattab@gmail.com",
-    "web": "https://hakim.se"
+    "name": "Vojtech Cerveny",
+    "email": "cervik49@gmail.com",
+    "web": "https://ff0000.cz"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hakimel/reveal.js.git"
+    "url": "git@github.com:vojtech-cerveny/o-lisce.git"
   },
   "engines": {
     "node": ">=10.0.0"
@@ -56,6 +57,7 @@
     "qunit": "^2.10.0",
     "rollup": "^2.26.4",
     "rollup-plugin-terser": "^7.0.0",
+    "standard-version": "^9.1.0",
     "yargs": "^15.1.0"
   },
   "browserslist": "> 0.5%, IE 11, not dead",
